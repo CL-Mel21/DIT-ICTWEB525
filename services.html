@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("header.html");
+            $("#menu").load("menu.html");
+            $("#aside").load("aside.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("top_nav_bar");
+            if (x.className === "nav_bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_bar";
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c698919862.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="css-grid">
+        <div id="header"></div>
+        <div id="menu"></div>
+
+        <div id="main">
+            <br />
+            <div class="page_menu">
+                <a href="#delivery">Delivery Information</a>
+                <a href="#collect">Click and Collect Information</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#enquiry">Online Enquires</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="contents">
+                <h1 id="delivery">
+                    Delivery Information
+                </h1>
+
+                <p>
+                    You can change your delivery preferences in Your Orders at any time after placing your order as long
+                    as
+                    the order hasn't entered the shipping process yet. For all deliveries, you consent to your order
+                    being
+                    left in a safe place.
+                </p>
+                <ul>
+                    <li>
+                        Group My Items Into As Few Deliveries As Possible
+                        Your order will be grouped into the fewest number of deliveries possible. This may mean that it
+                        will
+                        take longer to be shipped, depending on availability, but there'll only be one per-delivery
+                        charge.
+                        Please be aware that items whose availability is listed as 'Not Yet Released' or 'Back Ordered'
+                        can
+                        potentially delay deliveries with this option.
+                    </li>
+                    <li>
+                        I want my items sooner. Ship them as soon as they become available (at additional cost)
+                        Your items are shipped as they become available, beginning with those already in stock. You
+                        should
+                        choose this option if you want to receive your order quickly and the delivery may be delayed by
+                        the
+                        availability of a single item, for example. However, we'll charge you for the delivery of each
+                        item
+                        at
+                        the rates quoted to you at the time you placed your order.
+                    </li>
+                </ul>
+                <p>
+                    The number of deliveries we make for your order depends on:
+
+                    Our fulfilment network
+                    If your order has unrelated items such as a book, a computer and a cordless drill, they may be
+                    shipped
+                    separately, depending on where in our fulfilment network they're located.
+
+                    Note: You won't be charged more for delivery than was originally quoted to you at the time you
+                    placed
+                    your order.
+                </p>
+
+                <h1 id="collect">
+                    Click and Collect Information
+                </h1>
+
+                <p class="questions">
+                    Where do I pick up my Click & Collect order?
+                </p>
+                <p>
+                    Pick up your Click & Collect order from the Service Counter, usually located at the rear of the
+                    store.
+                    Our friendly team members can direct you to the right place.
+                </p>
+                <p class="questions">
+                    What time can I collect my order from store?
+                </p>
+                <p>
+                    Please wait for your confirmation email or SMS prior to visiting the store – normally sent within 24
+                    hours of placing your order.
+                </p>
+                <p>
+
+                    You can check store opening hours in the checkout when you select a store – just select ‘Store
+                    Details’.
+                    You can also check store details at any time using the Kmart Store Locator on our website.
+
+                </p>
+                <p class="questions">
+
+                    What do I need to bring to collect my Click & Collect order?
+
+                </p>
+                <p>
+                    For Click & Collect, make sure you bring either
+                </p>
+                <ul>
+                    <li>
+                        Your photo ID
+                    </li>
+                    <li>
+                        Your order collection notification (on your phone is fine)
+                    </li>
+                </ul>
+                <p class="questions">
+                    Can I get my Click & Collect order delivered?
+                </p>
+                <p>
+                    You can get your Click & Collect order delivered using GetItFast. Get It Fast is a third party
+                    delivery
+                    service that Kmart has partnered with, to offer delivery to Click & Collect customers at select
+                    stores
+                    only within 24 hours.
+                </p>
+
+                <h1 id="privacy">
+                    Privacy Policy
+                </h1>
+                <p>
+                    Kmart is committed to protecting the privacy of your personal information. This Privacy Policy
+                    (“Policy”) explains how we collect, use and disclose information about our customers, team members,
+                    suppliers (and their employees) and people who apply for employment with us. It also explains how to
+                    contact us if you have any questions about the management of your personal information or would like
+                    to
+                    access the personal information we hold about you. This Policy describes how we comply with our
+                    obligations under the Australian Privacy Act 1988 (Cth).
+                </p>
+                <p>
+                    “We”, “us”, “our” and “Kmart” means Kmart Australia Limited ABN 73 004 700 485 (trading as Kmart)
+                    and
+                    its Australian and offshore subsidiaries Kmart Group NZ Holdings Limited, Anko Global Holdings Pty
+                    Ltd
+                    (including Anko Retail Incorporated), KAS Global Trading Pty Ltd, KAS Pty Ltd (including KAS
+                    International Sourcing Bangladesh Private Ltd, KAS International Trading (Shanghai) Company Limited,
+                    KAS
+                    International Trading (SH) Coy Ltd), KAS Direct Sourcing Private Limited (India) and KAS Services
+                    India
+                    Private Limited (India).
+                </p>
+
+                <h1 id="enquiry">
+                    Online Enquires
+                </h1>
+                <img src="/images/enquiry.png" alt="" style="width: 70vw;">
+                <h1 id="faq">
+                    FAQ
+                </h1>
+                <img src="/images/faq.png" alt="" style="width: 70vw;">
+
+                <h1 id="contact">
+                    Contact Us
+                </h1>
+                <ul>
+                    <li>
+                        Address: 100 Main Road, Parramatta, NSW 20150
+                    </li>
+                    <li>
+                        Email: info@computerforce.com.au
+                    </li>
+                    <li>
+                        Phone: 02 4444 5555
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="aside"></div>
+        <div id="footer"></div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+h1 {
+  color: black;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-top: 10px;
+  background: #e26c6c;
+  background: -webkit-linear-gradient(
+    to right,
+    #e26c6c 0%,
+    #adb7bb 19%,
+    #5ca3ff 50%,
+    #adb7bb 86%
+  );
+  background: -moz-linear-gradient(
+    to right,
+    #e26c6c 0%,
+    #adb7bb 19%,
+    #5ca3ff 50%,
+    #adb7bb 86%
+  );
+  background: linear-gradient(
+    to right,
+    #e26c6c 0%,
+    #adb7bb 19%,
+    #5ca3ff 50%,
+    #adb7bb 86%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h2 {
+  margin-top: 10px;
+  color: grey;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h3 {
+  color: black;
+}
+.css-grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: auto auto minmax(83vh, auto) auto;
+  grid-template-areas:
+    "header header"
+    "menu menu"
+    "main aside"
+    "footer footer";
+}
+#header {
+  grid-area: header;
+  text-align: center;
+  background: rgb(73, 148, 175);
+  background: linear-gradient(
+    164deg,
+    rgba(73, 148, 175, 0.7) 21%,
+    rgba(226, 108, 108, 0.7) 55%,
+    rgba(173, 183, 187, 1) 76%,
+    rgba(245, 245, 245, 1) 100%
+  );
+}
+#menu {
+  grid-area: menu;
+}
+#main {
+  grid-area: main;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+#aside {
+  grid-area: aside;
+  background-color: rgb(245, 245, 245);
+}
+#footer {
+  background-image: linear-gradient(rgb(245, 245, 245), rgb(187, 185, 185));
+  text-align: center;
+  grid-area: footer;
+}
+#footer ul {
+  list-style: none;
+}
+
+.nav_bar {
+  background: rgb(126, 124, 125);
+  background: linear-gradient(
+    129deg,
+    rgba(126, 124, 125, 1) 2%,
+    rgba(245, 245, 245, 1) 91%
+  );
+  overflow: hidden;
+}
+
+.nav_bar .menu_group {
+  float: left;
+}
+.nav_bar .menu_label {
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.nav_bar .menu_label:hover {
+    background-color: lightgray;
+  text-shadow: 0 0 2px black, 0 0 4px black, 0 0 6px black, 0 0 8px black, 0 0 10px black;
+}
+
+.nav_bar .dropdown {
+  display: none;
+  position:absolute;
+  padding: 0 20px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.nav_bar .dropdown a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  padding-bottom: 10%;
+  padding-top: 10%;
+}
+.dropdown a:hover {
+  text-shadow: 0 0 2px rgb(108, 15, 161), 0 0 4px rgb(158, 98, 226), 0 0 6px rgb(71, 113, 177), 0 0 8px rgb(98, 175, 226), 0 0 10px rgb(98, 175, 226);
+}
+
+.menu_group:hover .dropdown {
+  display:block;
+  z-index: 999;
+}
+
+.nav_bar .search-container {
+  float: right;
+  padding: 6px;
+}
+
+.nav_bar input[type="text"] {
+  padding: 6px;
+  font-size: 1rem;
+  border: none;
+}
+.nav_bar button {
+  padding: 0 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "area1 area2"
+    "area3 area3";
+  justify-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5%;
+}
+.cart .box {
+  padding: 10%;
+}
+.cart button {
+  color: black;
+  grid-area: area3;
+  width: 200px;
+  height: 40px;
+  margin: 5%;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff6e7f 0%,
+    #bfe9ff 51%,
+    #ff6e7f 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 7px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  max-width: 180px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.product .product_category {
+  width: 90%;
+  height: 90%;
+  padding: 30px;
+  margin-bottom: 5%;
+  border-radius: 10%;
+  background: rgb(226, 108, 108);
+  background: linear-gradient(
+    164deg,
+    rgba(226, 108, 108, 0.3730085784313726) 14%,
+    rgba(124, 220, 255, 0.6923363095238095) 43%,
+    rgba(245, 245, 245, 0.2833727240896359) 100%,
+    rgba(173, 183, 187, 0.8856136204481793) 100%
+  );
+
+  text-align: center;
+}
+.product img {
+  width: 90%;
+}
+.product a {
+  color: black;
+  text-decoration: none;
+}
+#main .text_box {
+  margin: 0 50px;
+  background: rgb(195, 195, 195);
+  background: radial-gradient(
+    circle,
+    rgba(195, 195, 195, 1) 6%,
+    rgba(241, 240, 240, 1) 56%,
+    rgba(254, 252, 252, 1) 86%
+  );
+  padding: 5px 25px;
+  font-size: 1.5rem;
+}
+.container_form {
+  font-weight: bold;
+  background: rgb(226, 108, 108);
+  background: linear-gradient(
+    164deg,
+    rgba(226, 108, 108, 0.3730085784313726) 14%,
+    rgba(124, 220, 255, 0.6923363095238095) 43%,
+    rgba(245, 245, 245, 0.2833727240896359) 100%,
+    rgba(173, 183, 187, 0.8856136204481793) 100%
+  );
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  padding: 10px 100px;
+}
+
+.gc-box {
+margin: 50px auto;
+padding: 0;
+width: 50px;
+
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-content: center;
+  gap: 50px;
+margin-top: 50px;
+}
+.about-grid .aboutus {
+  grid-row: 1 / 4;
+}
+.linkcard {
+  background-color: white;
+  border: solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-decoration: none;
+  color: grey;
+  padding: 0px 20px;
+  width: 300px;
+  height: 120px;
+}
+.linkcard:hover {
+  background-image: linear-gradient(rgba(245, 245, 245, 1), rgba(218, 218, 218, 0.438));
+  color: grey;
+}
+.linkcard p {
+  padding: 0;
+  margin: 0;
+}
+.linkcard .linkhead {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.linkcard:hover .linkhead {
+  color: rgb(10, 120, 163);
+}
+
+.page_menu {
+  position:fixed;
+  width: 100px;
+  border: solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+}
+.page_menu a {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.page_menu a:hover {
+  text-shadow: 0 0 1px black;
+}
+
+.contents {
+  position: relative;
+  left: 140px;
+  width: 60vw;
+}
+.questions {
+  font-weight: bold;
+}
+.sitemap a{
+  text-decoration: none;
+}
+.sitemap a:hover {
+  text-shadow: 0 0 1px black;
+}
+.sitepart {
+  width:220px;
+  height: 380px;
+  margin-right: 30px;
+  padding: 10px;
+  float:left;
+  border: solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+.sitepart:hover {
+  background-image: linear-gradient(rgba(245, 245, 245, 1), rgba(218, 218, 218, 0.438));
+  color: grey;
+}
+.sitepart a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.sitepart a:hover {
+  text-shadow: 0 0 1px black;
+}
+@media screen and (max-width: 1350px) {
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 840px) {
+  .css-grid {
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "aside"
+      "footer"; */
+      display:block;
+  }  
+ .about-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    justify-items: center;
+  }
+
+  .nav_bar .menu_group:not(:first-child) {
+    display: none;
+  }
+  .nav_bar .search-container {
+    display: none;
+  }
+  .nav_bar a.hamburger {
+    display: block;
+    float: right;
+    padding: 10px;
+    color: rgb(102, 101, 101);
+    font-size: 1.5rem;
+  }
+  .nav_bar.responsive {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-areas:
+      "home    hamburger"
+      "product    product"
+      "account account"
+      "about   about"
+      "service service"
+      "search  search";
+  }
+  .nav_bar.responsive .menu_group {
+    display: block;
+  }
+  .nav_bar.responsive .search-container {
+    display: block;
+  }
+  .home_menu {
+    grid-area: home;
+  }
+  .hamburger {
+    grid-area: hamburger;
+  }
+  .product_menu {
+    grid-area: product;
+  }
+  .account_menu {
+    grid-area: account;
+  }
+  .about_menu {
+    grid-area: about;
+  }
+  .service_menu {
+    grid-area: service;
+  }
+  .nav_bar .menu_label {
+    text-align: left;
+  }
+  .nav_bar .search-container {
+    grid-area: search;
+    text-align: center;
+  }
+  .menu_group:hover .dropdown {
+
+  }
+  .page_menu {
+    display: none;
+  }
+.contents {
+  display: block;
+  left: auto;
+}
+}
+
